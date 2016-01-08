@@ -63,21 +63,30 @@ def sort_by_cohort(filename):
         elif line[4] == "I":
             instructors.append(line[0:2])
         else: 
-            all_students.append(line[0:2])
+            if line[4] == "Winter 2015":
+                winter_15.append(line)
+            elif line[4] == "Summer 2015":
+                summer_15.append(line)
+            elif line[4] == "Spring 2015":
+                spring_15.append(line)
 
-    # tas.sort()
-    # for ta in tas:
-    #     ta_name = ta[0] + " " + ta[1]
-    #     tas_alphasorted.append(ta_name)
 
-    # print tas_alphasorted
+    print winter_15
+    # winter_15 = [line for line in filename if line[4] == "Winter 2015"]
+
+    # print winter_15
+    # for student in all_students:
+    #     if student[4] == "Winter 2015":
+    #         winter_15.append(student)
+    # print winter_15
 
     def alpha_sort(lst, empty_lst):
+        """alpha_sort takes a list, concatenates indexes 0 and 1, makes a new list sorted alphabetically"""
         lst.sort()
         for person in lst:
             person_name = person[0] + " " + person[1]
             empty_lst.append(person_name)
-        print empty_lst
+        return empty_lst
     
     alpha_sort(tas, tas_alphasorted)
 
