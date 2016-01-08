@@ -3,8 +3,7 @@ Alexandra|Plassaras|Slytherin|Heather|Spring 2015
 Alice|Tsao|Slytherin|Kristen|Winter 2015
 Allison|Craig|Slytherin|Katie|Summer 2015
 Alyson|Van Hardenberg|Slytherin|Meggie|Summer 2015
-Amanda|Fuhrmann|Order of the Phoenix|Lavinia|Summer 2015
-Amanda|Gilmore|Hufflepuff|Meggie|Winter 2015
+  Amanda|Gilmore|Hufflepuff|Meggie|Winter 2015
 Amanda|Meurer|Ravenclaw|Kristen|Summer 2015
 Angela|Castanieto|Hufflepuff|Meggie|Spring 2015
 Anne|Vetto|Hufflepuff|Cynthia|Winter 2015
