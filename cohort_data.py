@@ -14,25 +14,14 @@ def unique_houses(filename):
 
     """
 
+    houses = []
     data_log = open(filename)
-
-    all_houses = []
-
     for line in data_log:
-        line = line.strip()
         line = line.split("|")
-        if line[2] != "":
-            house = line[2]
-            all_houses.append(house)
+        if line[2]:
+            houses.append(line[2])
 
-    houses = set(all_houses)
-
-    # Code goes here
-    print houses 
-
-    return houses
-
-unique_houses("cohort_data.txt")
+    return set(houses)
 
 
 def sort_by_cohort(filename):
@@ -71,7 +60,7 @@ def sort_by_cohort(filename):
                 spring_15.append(line)
 
 
-    print winter_15
+    # print winter_15
     # winter_15 = [line for line in filename if line[4] == "Winter 2015"]
 
     # print winter_15
